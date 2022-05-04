@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Update member!</h1>
+
+<table border="1">
+    <form method="post" action="/members/update/{{ member.id }}">
+        {% csrf_token %}
+        First Name:<br>
+        <input name="firstname" value="{{ member.firstname }}">
+        <br><br>
+        Last Name:<br>
+        <input name="lastname" value="{{ member.lastname }}">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</table>
+<p>
+<a href="/members">Back</a>
+</p>
+</body>
+</html>

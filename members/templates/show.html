@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Members!</h1>
+<table border="1">
+    <tr>
+        <td>{{ member.id }}</td>
+        <td>{{ member.firstname }}</td>
+        <td>{{ member.lastname }}</td>
+        <td><a href="{{member.id}}/delete/">Delete</a></td>
+        <td><a href="{{member.id}}/edit/">Edit</a></td>
+    </tr>
+</table>
+<p>
+<a href="index/">Back</a>
+</p>
+</body>
+</html>
